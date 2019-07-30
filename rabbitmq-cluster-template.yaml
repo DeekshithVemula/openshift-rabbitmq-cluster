@@ -22,8 +22,7 @@ parameters:
   value: rabbitmq
 - name: RABBITMQ_PASS
   description: "Password securing the RabbitMQ instance"
-  generate: expression
-  from: "[a-zA-Z0-9]{16}"
+  value: password
 - name: ERLANG_COOKIE
   description: "Cookie used for authentication of cluster nodes"
   generate: expression
